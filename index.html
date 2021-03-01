@@ -1,6 +1,6 @@
-<form name="contact" method="POST" data-netlify="true">
+<form class="contact" method="POST" data-netlify="true">
     <p>
-        <label>Your Name: <input type="text" id="name" name="name" /></label>   
+        <label>Your Name: <input type="text" id="name" name="name" /></label>
     </p>
     <p>
         <label>Your Email: <input type="email" id="email" name="email" /></label>
@@ -24,9 +24,9 @@
     //set fail border colours (to use on input when validation fails)
     var borderStyleFail = '1px solid red';
     //get the form submit button
-    var submit_button = document.querySelector('.form_submit');
+    var form = document.querySelector('.contact');
     //attach form event listener
-    submit_button.addEventListener("click", function(event){
+    form.addEventListener('submit', function(event) {
         //get the form "name" elemement
         var name = document.querySelector('#name');
         //get the form "email" element
